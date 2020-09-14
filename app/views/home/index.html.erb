@@ -7,5 +7,14 @@
 <% end %>
 
 
-<% stock = StockQuote::Stock.quote('aapl') %>
-<%= stock.latest_price %>
+<%# <% stock = StockQuote::Stock.quote('aapl') %>
+<br/>
+<% if @stock %>
+    <%= @stock.company_name %>
+<% elsif @nothing %>
+    <%= @nothing %>
+<% end %>
+
+<% if @error %>
+    <%= @error %>
+<% end %>

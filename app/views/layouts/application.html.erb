@@ -13,6 +13,11 @@
   <body>
     <%= render "home/navigation" %>
     <div class="container">
+      <!-- log in flash messages -->
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
+
+
       <br/>
       <%= yield %>
     </div>
